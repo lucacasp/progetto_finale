@@ -1,0 +1,125 @@
+.addproduct {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+  padding: 30px 50px;
+  margin: 20px 30px;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.addproduct-itemfield {
+  width: 100%;
+  color: #000;
+  font-size: 16px;
+}
+
+.addproduct-itemfield input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  padding-left: 15px;
+  border: 1px solid #c3c3c3;
+  outline: none;
+  color: #7b7b7b;
+  font-family: Poppins;
+  font-size: 14px;
+}
+
+.addproduct-price {
+  display: flex;
+  gap: 40px;
+}
+
+.add-product-selector {
+  padding: 10px 10px;
+  width: 150px;
+  height: 50px;
+  font-size: 14px;
+  color: #7b7b7b;
+  border: 1px solid #7b7b7b8d;
+  border-radius: 4px;
+}
+
+.addproduct-itemfield div {
+  display: flex;
+  width: 25%;
+}
+
+.addproduct-thumbnail-img {
+  height: 120px;
+  width: 120px;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.addproduct-itemfield div img {
+  margin-left: -30px;
+}
+
+.addproduct-btn {
+  margin-top: 40px;
+  width: 160px;
+  height: 50px;
+  border-radius: 6px;
+  background: #6079ff;
+  border: none;
+  cursor: pointer;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+.addproduct {
+  background-image: url('../Assets/glassify_background.png'); /* Sostituisci con il percorso dell'immagine */
+  background-size: cover; /* Adatta l'immagine al contenitore */
+  background-position: center; /* Centra l'immagine nel contenitore */
+  background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.addproduct-itemfield,
+.addproduct-price {
+  margin-bottom: 15px;
+}
+
+.addproduct-thumbnail-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.addproduct-btn {
+  background-color: #FF4141;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.addproduct-btn:hover {
+  background-color: #FF4141;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+
+
+@media(max-width:800px) {
+  .addproduct {
+    width: auto;
+    padding: 30px;
+    margin: 20px 20px;
+  }
+}

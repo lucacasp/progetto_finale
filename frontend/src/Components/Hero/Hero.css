@@ -1,0 +1,43 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  z-index: 1; /* Z-index generale per la sezione hero */
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantiene le proporzioni del video */
+  z-index: -1; /* Mette il video ancora più in background */
+}
+
+.desktop-video {
+  display: block; /* Mostra il video desktop per default */
+  z-index: -1; /* Z-index inferiore al dropdown */
+}
+
+.mobile-video {
+  display: none; /* Nasconde il video mobile per default */
+  z-index: -1; /* Z-index inferiore al dropdown */
+}
+
+@media (max-width: 1015px) {
+  .hero {
+      height: 300px;
+      z-index: 1; /* Assicura che il container hero abbia un index superiore rispetto al video */
+  }
+  
+  .desktop-video {
+      display: none; /* Nasconde il video desktop su schermi piccoli */
+  }
+
+  .mobile-video {
+      display: block; /* Mostra il video mobile su schermi piccoli */
+      z-index: -1; /* Mantiene il video mobile in un index inferiore */
+  }
+}
