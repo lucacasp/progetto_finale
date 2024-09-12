@@ -43,7 +43,7 @@ const ProductDisplay = ({ product }) => {
         <div className="productdisplay-right-description">{product.description}</div>
         <button onClick={handleAddToCart}>Aggiungi al carrello</button>
       </div>
-      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} message="Prodotto aggiunto al carrello" />
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} message="Prodotto aggiunto al carrello con successo" />
     </div>
   );
 };
