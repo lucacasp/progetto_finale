@@ -69,7 +69,7 @@ Segui questi passaggi per installare e avviare il progetto in locale.
 
     ```bash
     # Terminale integrato backend - Avvia il Server
-    Inserisci: node server.js
+    Inserisci: node index.js
 
     # Terminale integrato frontend - Avvia il Frontend
     npm start
