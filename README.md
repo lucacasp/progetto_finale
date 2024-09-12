@@ -56,7 +56,7 @@ Segui questi passaggi per installare e avviare il progetto in locale.
 2. Installa le dipendenze per il frontend:
 
     ```bash
-    npm start
+    npm install
     ```
 
 3. Installa le dipendenze per il backend:
