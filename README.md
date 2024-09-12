@@ -22,10 +22,19 @@ Glassify è una piattaforma e-commerce che consente agli utenti di navigare e ac
 
 Glassify è stato sviluppato utilizzando il seguente stack tecnologico:
 
+## Tecnologie Utilizzate
+
 - **Frontend**: [React](https://reactjs.org/) con [React Router](https://reactrouter.com/) per la gestione delle pagine.
 - **Backend**: [Node.js](https://nodejs.org/) con [Express](https://expressjs.com/) per la gestione delle API.
 - **Database**: [MongoDB](https://www.mongodb.com/) per l'archiviazione dei dati.
-- **Altri Strumenti**: [Mongoose](https://mongoosejs.com/) per la modellazione degli oggetti di MongoDB, [JWT](https://jwt.io/) per l'autenticazione, e [Bcrypt](https://www.npmjs.com/package/bcrypt) per la crittografia delle password, [EmailJs] (https://www.emailjs.com/) per l'invio di email (DEM), [Canva] (https://www.canva.com/) per la creazione degli assets, [Cloudinary] (https://console.cloudinary.com/) per lo storage e gestione delle immagini.
+- **Altri Strumenti**:
+  - [Mongoose](https://mongoosejs.com/) per la modellazione degli oggetti di MongoDB.
+  - [JWT](https://jwt.io/) per l'autenticazione.
+  - [Bcrypt](https://www.npmjs.com/package/bcrypt) per la crittografia delle password.
+  - [EmailJS](https://www.emailjs.com/) per l'invio di email (DEM).
+  - [Cloudinary](https://cloudinary.com/) per lo storage e gestione delle immagini.
+  - [Canva](https://www.canva.com/) per la creazione degli assets.
+
 
 ## Installazione
 
