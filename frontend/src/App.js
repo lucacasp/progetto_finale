@@ -8,8 +8,6 @@ import ShopCategory from "./Pages/ShopCategory";
 import eyewear_banner from "./Components/Assets/eyewear_banner.png";
 import glassify_banner_sunglasses_cropped2 from "./Components/Assets/glassify_banner_sunglasses_cropped2.png";
 import LoginSignup from "./Pages/LoginSignup";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 export const backend_url = 'hhttps://glassyecommerce.herokuapp.com/';
 export const currency = '$';
