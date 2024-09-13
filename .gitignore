@@ -1,0 +1,14 @@
+# Ignora file .env contenente variabili sensibili
+.env
+
+# Ignora altre cartelle e file di build
+/node_modules
+/build
+/dist
+
+# Ignora file di log
+*.log
+
+# Ignora file del sistema operativo
+.DS_Store
+Thumbs.db
