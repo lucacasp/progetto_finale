@@ -1,7 +1,10 @@
 {
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "emailjs-com": "^3.2.0",
-    "punycode": "^2.3.1"
+    "punycode": "^2.3.1",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1"
   }
 }

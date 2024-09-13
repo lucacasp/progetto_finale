@@ -26,6 +26,54 @@
     max-width: 1280px;
 }
 
+/* RelatedProducts.css */
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    width: 100%;
+  }
+  
+  .carousel-item {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    min-width: 200px;
+    scroll-snap-align: start;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .carousel-button.left {
+    left: 10px;
+  }
+  
+  .carousel-button.right {
+    right: 10px;
+  }
+  
+  /* Optional: Hide scrollbar for better appearance */
+  .carousel-inner::-webkit-scrollbar {
+    display: none;
+  }
 
 @media(max-width:600px){
    
@@ -37,4 +85,16 @@
         height: 4px;
         
     }
+    @media (max-width: 768px) {
+        .carousel-item {
+          width: 150px; /* Regola la larghezza per i dispositivi mobili */
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .carousel-item {
+          width: 300px; /* Regola ulteriormente per schermi più piccoli */
+        }
+      }
+      
 }

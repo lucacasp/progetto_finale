@@ -17,26 +17,45 @@ const RelatedProducts = ({ category, id }) => {
     })
       .then((res) => res.json())
       .then((data) => setRelated(data));
-  }, [category]); // Aggiungi 'category' come dipendenza
+  }, [category]);
+
+  const scrollLeft = () => {
+    document.querySelector('.carousel-inner').scrollBy({
+      left: -200,
+      behavior: 'smooth',
+    });
+  };
+
+  const scrollRight = () => {
+    document.querySelector('.carousel-inner').scrollBy({
+      left: 200,
+      behavior: 'smooth',
+    });
+  };
 
   return (
     <div className="relatedproducts">
       <h1>Prodotti correlati</h1>
       <hr />
-      <div className="relatedproducts-item">
-        {related.map((item, index) =>
-          id !== item.id ? (
-            <Item
-              key={index}
-              id={item.id}
-              name={item.name}
-              image={item.image}
-              category={item.category}
-              new_price={item.new_price}
-              old_price={item.old_price}
-            />
-          ) : null // Ritorna 'null' se la condizione non è soddisfatta
-        )}
+      <div className="carousel-container">
+        <button className="carousel-button left" onClick={scrollLeft}>‹</button>
+        <div className="carousel-inner">
+          {related.map((item, index) =>
+            id !== item.id ? (
+              <div key={index} className="carousel-item">
+                <Item
+                  id={item.id}
+                  name={item.name}
+                  image={item.image}
+                  category={item.category}
+                  new_price={item.new_price}
+                  old_price={item.old_price}
+                />
+              </div>
+            ) : null
+          )}
+        </div>
+        <button className="carousel-button right" onClick={scrollRight}>›</button>
       </div>
     </div>
   );
