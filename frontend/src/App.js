@@ -11,7 +11,7 @@ import LoginSignup from "./Pages/LoginSignup";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export const backend_url = 'http://localhost:4000';
+export const backend_url = 'hhttps://glassyecommerce.herokuapp.com/';
 export const currency = '$';
 
 function App() {

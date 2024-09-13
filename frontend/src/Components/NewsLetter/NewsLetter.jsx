@@ -13,7 +13,7 @@ const NewsLetter = () => {
       email: email,
     };
 
-    emailjs.send('service_5y5csgl', 'template_ahzeqh8', templateParams, 'p11VFDgSSk8Rb6G8z')
+    emailjs.send(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, templateParams, process.env.REACT_APP_EMAILJS_USER_ID)
       .then((response) => {
         console.log('La mail è stata inviata con successo: ', response);
         setStatus('Grazie per esserti iscritto!');
